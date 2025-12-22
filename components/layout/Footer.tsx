@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Github, Linkedin, Twitter } from "lucide-react"; // Ajoute les icones dont tu as besoin
 import Link from "next/link";
 import { MagneticButton } from "../ui/MagneticButton";
+import { useContact } from "@/context/ContactContext";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const { openContact } = useContact();
 
   return (
     <footer className="relative py-24 px-6 md:px-12 bg-background border-t border-border/40 overflow-hidden">
@@ -44,12 +46,12 @@ export function Footer() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
             >
-                <Link href="mailto:ton.email@gmail.com">
+                <div onClick={openContact} className="cursor-pointer inline-block">
                     <MagneticButton className="group flex items-center gap-4 px-10 py-6 rounded-full bg-primary text-primary-foreground text-xl md:text-2xl font-bold shadow-2xl hover:shadow-primary/30 transition-all">
                         Me contacter
                         <ArrowUpRight size={32} className="transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2" />
                     </MagneticButton>
-                </Link>
+                </div>
             </motion.div>
         </div>
 
@@ -67,7 +69,6 @@ export function Footer() {
                     { name: "Malt", href: "#", icon: null, text: "Malt" }, // Ou une icone perso
                     { name: "LinkedIn", href: "#", icon: Linkedin },
                     { name: "Github", href: "#", icon: Github },
-                    { name: "Twitter", href: "#", icon: Twitter },
                 ].map((social) => (
                     <Link 
                         key={social.name}

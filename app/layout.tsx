@@ -4,6 +4,8 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { ContactProvider } from "@/context/ContactContext";
+import { ContactModal } from "@/components/layout/ContactModal";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -23,8 +25,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             disableTransitionOnChange
           >
           <SmoothScroll>
-            {children}
+            <ContactProvider>
+
+              {children}
+              <ContactModal />
+
+            </ContactProvider>
           </SmoothScroll>
+
         </ThemeProvider>
       </body>
     </html>

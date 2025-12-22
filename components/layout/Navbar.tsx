@@ -5,10 +5,12 @@ import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useContact } from "@/context/ContactContext";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const { scrollY } = useScroll();
+  const { openContact } = useContact();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -42,7 +44,7 @@ export function Navbar() {
             Correction Centrage : On utilise absolute + translate pour un centrage mathématique parfait 
         */}
         <nav className="hidden md:flex items-center gap-8 font-medium text-sm absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          {["Projets", "A propos", "Contact"].map((item) => (
+          {["Projets", "A propos"].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item.toLowerCase().replace(" ", "-"))}
@@ -51,6 +53,12 @@ export function Navbar() {
               {item}
             </button>
           ))}
+          <button 
+            onClick={openContact}
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            Contact
+          </button>
         </nav>
 
         {/* TOGGLE THEME */}

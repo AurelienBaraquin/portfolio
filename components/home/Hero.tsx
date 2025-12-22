@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { useContact } from "@/context/ContactContext";
 
 export function Hero() {
+  const { openContact } = useContact();
+
   return (
     <section className="h-screen flex flex-col items-center justify-center relative overflow-hidden">
       
@@ -60,7 +63,10 @@ export function Hero() {
             <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
                 Voir mes projets
             </button>
-            <button className="px-8 py-3 rounded-full bg-muted text-foreground font-medium hover:bg-muted/80 transition-colors">
+            <button 
+                onClick={openContact} 
+                className="px-8 py-3 rounded-full bg-muted text-foreground font-medium hover:bg-muted/80 transition-colors"
+            >
                 Me contacter
             </button>
         </motion.div>
