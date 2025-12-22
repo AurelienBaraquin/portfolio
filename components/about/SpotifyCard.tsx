@@ -62,7 +62,7 @@ export function SpotifyCard() {
             {/* Pochette Album (Tu peux mettre une image dans public) */}
             <div className="relative w-12 h-12 rounded-md overflow-hidden bg-muted shadow-lg shrink-0">
                {/* Si tu as une image : <Image src="/cover.jpg" fill alt="Cover" /> */}
-               <Image src="/images/Bohnes.jpg" fill alt="Cover" />
+               <Image src="/images/Bohnes.jpg" fill sizes="true" alt="Cover" />
             </div>
             
             <div className="overflow-hidden">
