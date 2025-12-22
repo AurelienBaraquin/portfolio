@@ -66,9 +66,9 @@ export function Footer() {
             {/* Réseaux Sociaux */}
             <div className="flex items-center gap-6">
                 {[
-                    { name: "Malt", href: "#", icon: null, text: "Malt" }, // Ou une icone perso
-                    { name: "LinkedIn", href: "#", icon: Linkedin },
-                    { name: "Github", href: "#", icon: Github },
+                    { name: "Malt", href: "https://www.malt.com/profile/aurelienbaraquin1", icon: null, text: "Malt" }, // Ou une icone perso
+                    { name: "LinkedIn", href: "https://www.linkedin.com/in/aurelien-baraquin/", icon: Linkedin },
+                    { name: "Github", href: "https://github.com/AurelienBaraquin", icon: Github },
                 ].map((social) => (
                     <Link 
                         key={social.name}

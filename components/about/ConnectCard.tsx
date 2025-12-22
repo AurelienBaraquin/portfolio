@@ -38,7 +38,7 @@ export function ConnectCard() {
        
        {/* --- BOUTON MALT (Reste un lien externe) --- */}
        <Link 
-         href="https://www.malt.fr/profile/tonprofil" 
+         href="https://www.malt.com/profile/aurelienbaraquin1" 
          target="_blank"
          className="flex-1 flex items-center gap-4 p-4 rounded-2xl bg-[#FF5C57]/10 border border-[#FF5C57]/20 hover:bg-[#FF5C57]/20 transition-all group"
        >
