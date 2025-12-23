@@ -2,7 +2,7 @@
 
 import { Project } from "@/data/projects";
 import { cn } from "@/lib/utils";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { Github, ExternalLink, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
@@ -28,7 +28,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   const opacityProgress = useTransform(scrollYProgress, [0, 0.2], [0, 1]); // Fade in rapide
 
   // --- 2. CONFIGURATION CASCADE (Stagger) ---
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -39,7 +39,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     }
   };
 
-  const childVariants = {
+  const childVariants: Variants = {
     hidden: { opacity: 0, y: 30 }, // Départ plus bas pour que la remontée soit visible
     visible: { 
       opacity: 1, 
