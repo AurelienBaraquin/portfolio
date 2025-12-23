@@ -3,12 +3,12 @@
 import { useState } from "react";
 import { Mail, Briefcase, Check, Copy } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { cn, myemail } from "@/lib/utils";
 import confetti from "canvas-confetti";
 
 export function ConnectCard() {
   const [copied, setCopied] = useState(false);
-  const email = "ton.email@gmail.com"; // 👈 Mets ton vrai email ici
+  const email = myemail;
 
   const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
     // 1. Copie dans le presse-papier

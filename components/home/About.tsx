@@ -74,14 +74,12 @@ export function About() {
                         <div className="w-full h-full bg-muted flex items-center justify-center text-xs">Photo</div>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold">Ton Prénom</h3>
+                        <h3 className="text-xl font-bold">Aurélien Baraquin</h3>
                         <p className="text-primary font-medium">Créateur Digital & Dev</p>
                     </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                    Développeur passionné, je combine rigueur technique et sensibilité artistique.
-                    Pour moi, un site web doit être comme une chorégraphie de Jumpstyle : 
-                    précis, rythmé et impactant.
+                    Description à faire ici
                     <br/><br/>
                     Spécialisé en <strong>React, Next.js et Motion</strong>, je transforme des idées complexes en interfaces fluides.
                 </p>

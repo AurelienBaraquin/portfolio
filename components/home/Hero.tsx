@@ -60,7 +60,14 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex items-center justify-center gap-4 pt-4"
         >
-            <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
+            <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+              onClick={() => {
+                const projectsSection = document.getElementById("projets");
+                if (projectsSection) {
+                  projectsSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
                 Voir mes projets
             </button>
             <button 

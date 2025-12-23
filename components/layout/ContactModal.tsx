@@ -5,13 +5,13 @@ import { useContact } from "@/context/ContactContext";
 import { Briefcase, Check, Copy, Github, Linkedin, Mail, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn, myemail } from "@/lib/utils";
 import confetti from "canvas-confetti";
 
 export function ContactModal() {
   const { isOpen, setIsOpen } = useContact();
   const [copied, setCopied] = useState(false);
-  const email = "ton.email@gmail.com"; // 👈 Ton Email
+  const email = myemail;
 
   const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
     navigator.clipboard.writeText(email);
@@ -95,7 +95,7 @@ export function ContactModal() {
                 <Link href="#" target="_blank" className="flex items-center justify-center gap-2 p-3 rounded-lg border hover:bg-muted transition-colors text-sm font-medium">
                     <Linkedin size={18} className="text-blue-600" /> LinkedIn
                 </Link>
-                <Link href="#" target="_blank" className="flex items-center justify-center gap-2 p-3 rounded-lg border hover:bg-muted transition-colors text-sm font-medium">
+                <Link href="https://github.com/AurelienBaraquin" target="_blank" className="flex items-center justify-center gap-2 p-3 rounded-lg border hover:bg-muted transition-colors text-sm font-medium">
                     <Github size={18} /> Github
                 </Link>
             </div>
