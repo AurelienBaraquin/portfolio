@@ -39,7 +39,7 @@ export function Hero() {
         >
           Je conçois des expériences <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-            Web & Digitales
+            Web & Logiciels sur-mesure
           </span>
         </motion.h1>
 
@@ -50,7 +50,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
-          Développeur Fullstack passionné par le design UI/UX, l'architecture logicielle propre et les animations fluides.
+          Développeur Fullstack polyvalent, spécialisé dans la conception d'architectures logicielles performantes et d'interfaces web réactives.
         </motion.p>
 
         {/* Boutons d'action */}

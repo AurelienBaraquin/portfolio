@@ -81,7 +81,7 @@ export function About() {
                 <p className="text-muted-foreground leading-relaxed">
                     Description à faire ici
                     <br/><br/>
-                    Spécialisé en <strong>React, Next.js et Motion</strong>, je transforme des idées complexes en interfaces fluides.
+                    Ma maîtrise du <strong>C, C++ et Rust</strong>, me différencie des autres développeurs web et prouve ma rigueur technique.
                 </p>
                 <div className="mt-auto pt-4 border-t border-border/50">
                    <TechStack />
