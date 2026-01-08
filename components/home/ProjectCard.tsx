@@ -127,6 +127,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <div className="relative rounded-lg overflow-hidden aspect-video bg-muted/50">
                <video
                  src={project.videoUrl}
+                 poster={project.videoPoster}
                  autoPlay
                  loop
                  muted

@@ -10,8 +10,14 @@ import { ContactModal } from "@/components/layout/ContactModal";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mon Portfolio | Développeur Fullstack",
-  description: "Portfolio interactif créé avec Next.js et Framer Motion",
+  title: {
+    default: "Aurélien Baraquin | Développeur Fullstack & Logiciel",
+    template: "%s | Aurélien Baraquin",
+  },
+  description: "Portfolio de Aurélien Baraquin, développeur passionné fullstack et polyvalent.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
