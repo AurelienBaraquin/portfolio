@@ -28,9 +28,9 @@ export function Projects() {
       <div className="flex flex-col">
         {projects.map((project, index) => (
           <ProjectCard 
-            key={project.id} 
+            key={index} 
             project={project} 
-            index={index} 
+            index={index}
           />
         ))}
       </div>
