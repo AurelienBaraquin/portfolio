@@ -48,5 +48,13 @@ export const projects: Project[] = [
     videoPoster: "/images/nescargot_poster.png",
     github: "https://github.com/AurelienBaraquin/NESCARGOT",
   },
+  {
+    id: 5,
+    title: "CrabInk - Console E-Ink Portable",
+    description: "Une console portable dédiée à la lecture de Visual Novels sur écran E-Ink. Le système repose sur une architecture logicielle événementielle en Python et intègre un moteur de jeu sur mesure (Machine Virtuelle à OpCodes) pour interpréter des scénarios complexes tout en optimisant la consommation d'énergie. La console est encore en développement et sera peut-être commercialisée à l'avenir.",
+    tags: ["Python", "Rust", "Raspberry Pi", "E-Ink", "Embedded", "Hardware"],
+    videoUrl: "/videos/crabink.mp4",
+    videoPoster: "/images/crabink_poster.png",
+  },
   // Ajoute d'autres projets ici...
 ];

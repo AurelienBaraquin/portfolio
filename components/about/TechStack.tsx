@@ -1,28 +1,37 @@
 "use client";
 import { 
-  Code2, Database, Layout, Server, Globe, Cpu, Terminal, Layers 
+  Code2, Database, Layout, Server, Globe, Cpu, Terminal, Layers, 
+  Bug,
+  GitBranch,
+  Brain,
+  Smartphone,
+  Box,
+  Zap
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-// LISTE 1 : WEB (Va vers la gauche)
 const webTechs = [
-  { name: "Next.js 15", icon: Globe },
+  { name: "Next.js", icon: Globe },
   { name: "React", icon: Code2 },
   { name: "TypeScript", icon: Code2 },
+  { name: "Vite", icon: Zap },
   { name: "Tailwind CSS", icon: Layout },
   { name: "Framer Motion", icon: Layout },
-  { name: "Three.js", icon: Layout },
+  { name: "Three.js", icon: Box },
+  { name: "PHP", icon: Globe },
+  { name: "Responsive Design", icon: Smartphone },
 ];
 
-// LISTE 2 : SOFTWARE / BACKEND (Va vers la droite)
 const softwareTechs = [
-  { name: "Python", icon: Terminal },
-  { name: "C++", icon: Cpu },
+  { name: "C / C++", icon: Cpu },
   { name: "Rust", icon: Cpu },
+  { name: "Python / AI", icon: Brain },
   { name: "Docker", icon: Server },
-  { name: "PostgreSQL", icon: Database },
-  { name: "Redis", icon: Database },
-  { name: "System Design", icon: Layers },
+  { name: "CI/CD / Actions", icon: GitBranch },
+  { name: "Turso / SQL", icon: Database },
+  { name: "Nginx", icon: Globe },
+  { name: "Linux / Bash", icon: Terminal },
+  { name: "Valgrind / GDB", icon: Bug },
 ];
 
 export function TechStack() {

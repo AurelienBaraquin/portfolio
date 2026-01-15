@@ -92,7 +92,7 @@ export function ContactModal() {
 
             {/* 4. SOCIALS */}
             <div className="grid grid-cols-2 gap-3">
-                <Link href="#" target="_blank" className="flex items-center justify-center gap-2 p-3 rounded-lg border hover:bg-muted transition-colors text-sm font-medium">
+                <Link href="https://www.linkedin.com/in/aurelien-baraquin/" target="_blank" className="flex items-center justify-center gap-2 p-3 rounded-lg border hover:bg-muted transition-colors text-sm font-medium">
                     <Linkedin size={18} className="text-blue-600" /> LinkedIn
                 </Link>
                 <Link href="https://github.com/AurelienBaraquin" target="_blank" className="flex items-center justify-center gap-2 p-3 rounded-lg border hover:bg-muted transition-colors text-sm font-medium">

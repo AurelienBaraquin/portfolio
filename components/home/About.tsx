@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BentoCard } from "../about/BentoCard";
 import { TechStack } from "../about/TechStack";
@@ -68,24 +69,40 @@ export function About() {
           {/* ... (Tes BentoCards ne changent pas, copie-les ici comme avant) ... */}
           
           <BentoCard className="md:col-span-2 md:row-span-2 flex flex-col justify-between gap-6">
-               {/* ... Contenu BIO ... */}
-               <div className="flex items-center gap-4">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 shrink-0">
-                        <div className="w-full h-full bg-muted flex items-center justify-center text-xs">Photo</div>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-bold">Aurélien Baraquin</h3>
-                        <p className="text-primary font-medium">Créateur Digital & Dev</p>
-                    </div>
+            <div className="flex items-center gap-4">
+                <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 shrink-0">
+                    <Image 
+                        src="images/moi.jpg"  // Mets ici le nom exact de ton fichier dans 'public'
+                        alt="Photo de Aurélien Baraquin"
+                        fill={true} // Ça permet à l'image de remplir le cercle parent
+                        className="object-cover" // Ça évite que ta tête soit déformée
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                    Description à faire ici
-                    <br/><br/>
-                    Ma maîtrise du <strong>C, C++ et Rust</strong>, me différencie des autres développeurs web et prouve ma rigueur technique.
-                </p>
-                <div className="mt-auto pt-4 border-t border-border/50">
-                   <TechStack />
+
+                <div>
+                    <h3 className="text-xl font-bold">Aurélien Baraquin</h3>
+                    <p className="text-primary font-medium">Créateur Digital & Dev</p>
                 </div>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+                Étudiant à <strong>Epitech</strong> et passionné par l'architecture logicielle, je navigue entre la 
+                <span className="text-foreground font-medium"> précision du bas niveau</span> et la 
+                <span className="text-foreground font-medium"> réactivité du web moderne</span>.
+                <br/><br/>
+                D'un côté, mon expertise en <strong>C, C++ et Rust</strong> m'a permis de concevoir des projets complexes comme des 
+                <span className="text-foreground"> émulateurs (NES, Gameboy)</span> et des moteurs de jeux, développant ainsi une maîtrise profonde de la 
+                <strong> gestion mémoire</strong> et de l'<strong>optimisation</strong>.
+                <br/><br/>
+                De l'autre, j'applique cette rigueur au <strong>Web Fullstack</strong>. De la création d'interfaces fluides avec 
+                <span className="text-primary font-semibold"> Next.js et Tailwind CSS</span> à la mise en place de backends robustes (<strong>PIXEL-QUEST</strong>), 
+                je maîtrise l'ensemble de la chaîne : gestion d'APIs, sécurisation des données et 
+                <span className="text-foreground font-medium"> intégration d'IA générative</span>.
+                <br/><br/>
+                Autonome sur toute la partie <strong>DevOps</strong> (Docker, CI/CD, Nginx), j'héberge et déploie mes propres solutions sur serveur dédié. 
+                Que vous ayez besoin d'une application web performante ou d'une logique métier complexe, j'apporte une 
+                <span className="text-foreground font-medium"> vision d'ingénieur</span> capable de m'adapter à n'importe quelle stack technique.
+            </p>
           </BentoCard>
 
           <BentoCard className="p-5">
@@ -96,8 +113,10 @@ export function About() {
               <TimeLocation />
           </BentoCard>
 
-          <BentoCard className="md:col-span-2 p-0 border-0 overflow-hidden">
-              <HobbiesCard />
+          <BentoCard className="md:col-span-2 flex flex-col justify-between gap-6">
+            <div className="mt-auto border-t border-border/50">
+                <TechStack />
+            </div>
           </BentoCard>
 
           <div className="md:row-span-1 h-full">
