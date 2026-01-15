@@ -65,17 +65,14 @@ export function About() {
         }}
         className="grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[250px]"
       >
-          
-          {/* ... (Tes BentoCards ne changent pas, copie-les ici comme avant) ... */}
-          
           <BentoCard className="md:col-span-2 md:row-span-2 flex flex-col justify-between gap-6">
             <div className="flex items-center gap-4">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 shrink-0">
                     <Image 
-                        src="images/moi.jpg"  // Mets ici le nom exact de ton fichier dans 'public'
+                        src="/images/moi.jpg"
                         alt="Photo de Aurélien Baraquin"
-                        fill={true} // Ça permet à l'image de remplir le cercle parent
-                        className="object-cover" // Ça évite que ta tête soit déformée
+                        fill={true}
+                        className="object-cover"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                 </div>
