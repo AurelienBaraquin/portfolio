@@ -46,7 +46,7 @@ export function ContactModal() {
             
             {/* 1. BOUTON MALT (Premium) */}
             <Link 
-                href="https://www.malt.fr/profile/tonprofil" 
+                href="https://www.malt.com/profile/aurelienbaraquin1" 
                 target="_blank"
                 className="group relative overflow-hidden flex items-center gap-4 p-4 rounded-xl bg-[#FF5C57]/10 border border-[#FF5C57]/20 hover:bg-[#FF5C57]/20 transition-all"
             >
