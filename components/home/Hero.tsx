@@ -37,9 +37,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground"
         >
-          Je conçois des expériences <br />
+          Solutions Web Haute Performance <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-            Web & Logiciels sur-mesure
+            & Architectures Logicielles Scalables.
           </span>
         </motion.h1>
 

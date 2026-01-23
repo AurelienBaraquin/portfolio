@@ -83,22 +83,18 @@ export function About() {
                 </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-                Étudiant à <strong>Epitech</strong> et passionné par l'architecture logicielle, je navigue entre la 
-                <span className="text-foreground font-medium"> précision du bas niveau</span> et la 
-                <span className="text-foreground font-medium"> réactivité du web moderne</span>.
+                <strong>Ingénieur Logiciel</strong> spécialisé dans la convergence entre la 
+                <span className="text-foreground font-medium"> performance système</span> et l'agilité du 
+                <span className="text-foreground font-medium"> web moderne</span>. Basé à Dublin, j'accompagne les entreprises dans la création de solutions techniques robustes et scalables.
                 <br/><br/>
-                D'un côté, mon expertise en <strong>C, C++ et Rust</strong> m'a permis de concevoir des projets complexes comme des 
-                <span className="text-foreground"> émulateurs (NES, Gameboy)</span> et des moteurs de jeux, développant ainsi une maîtrise profonde de la 
-                <strong> gestion mémoire</strong> et de l'<strong>optimisation</strong>.
+                Maîtrisant les langages de précision comme le <strong>C++, et Rust</strong>, j'ai développé une expertise rare en 
+                <span className="text-foreground"> architecture logicielle</span> et en <strong>optimisation de ressources</strong> (gestion mémoire, multithreading) à travers la conception d'émulateurs et de moteurs de jeux.
                 <br/><br/>
-                De l'autre, j'applique cette rigueur au <strong>Web Fullstack</strong>. De la création d'interfaces fluides avec 
-                <span className="text-primary font-semibold"> Next.js et Tailwind CSS</span> à la mise en place de backends robustes (<strong>PIXEL-QUEST</strong>), 
-                je maîtrise l'ensemble de la chaîne : gestion d'APIs, sécurisation des données et 
-                <span className="text-foreground font-medium"> intégration d'IA générative</span>.
+                Cette rigueur "bas niveau", je l'applique au <strong>Web Fullstack</strong> pour garantir des performances hors normes. Expert de l'écosystème 
+                <span className="text-primary font-semibold"> Next.js 15 et TypeScript</span>, je conçois des applications fluides et sécurisées, intégrant intelligemment les capacités de l'<strong>IA générative</strong> (LLMs, RAG) pour répondre aux besoins métiers actuels.
                 <br/><br/>
-                Autonome sur toute la partie <strong>DevOps</strong> (Docker, CI/CD, Nginx), j'héberge et déploie mes propres solutions sur serveur dédié. 
-                Que vous ayez besoin d'une application web performante ou d'une logique métier complexe, j'apporte une 
-                <span className="text-foreground font-medium"> vision d'ingénieur</span> capable de m'adapter à n'importe quelle stack technique.
+                Totalement autonome sur la chaîne <strong>DevOps</strong> (Docker, CI/CD, Nginx), je prends en charge l'hébergement et le déploiement de vos infrastructures sur serveurs dédiés. Plus qu'un développeur, j'apporte une 
+                <span className="text-foreground font-medium"> vision d'ingénieur</span> capable de sécuriser vos choix techniques et de livrer des produits finis, prêts à passer à l'échelle.
             </p>
           </BentoCard>
 

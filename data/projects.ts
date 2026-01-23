@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Pixel Quest",
-    description: "Un jeu narratif type visual novel généré en temps réel avec l'IA pour les images et les dialogues. Les chemins déjà parcourus sont mémorisés en base de données pour optimiser l'expérience.",
+    description: "Plateforme Interactive IA : Intégration de LLMs (Gemini API) et gestion de base de données vectorielle pour une expérience utilisateur dynamique et persistante.",
     tags: ["Vite", "React", "TypeScript", "Gemini API", "Turso DB", "SQLite", "Docker", "Nginx"],
     videoUrl: "/videos/pixel_quest.mp4",
     videoPoster: "/images/pixel_quest_poster.png",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Emulateur de NES en Rust",
-    description: "Un projet personnel visant à créer un émulateur de console NES en utilisant le langage Rust pour une performance optimale.",
+    description: "Ingénierie de Haute Performance : Développement d'un système complexe en Rust. Maîtrise critique de la gestion mémoire, des cycles CPU et de l'optimisation bas-niveau.",
     tags: ["Rust", "Emulation", "NES", "SDL2", "WebAssembly", "CPU", "PPU"],
     videoUrl: "/videos/rust_nes.mp4",
     videoPoster: "/images/rust_nes_poster.png",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "CrabInk - Console E-Ink Portable",
-    description: "Une console portable dédiée à la lecture de Visual Novels sur écran E-Ink. Le système repose sur une architecture logicielle événementielle en Python et intègre un moteur de jeu sur mesure (Machine Virtuelle à OpCodes) pour interpréter des scénarios complexes tout en optimisant la consommation d'énergie. La console est encore en développement et sera peut-être commercialisée à l'avenir.",
+    description: "R&D Produit & Système Embarqué : Conception d'une architecture logicielle événementielle optimisant la consommation d'énergie sur hardware contraint.",
     tags: ["Python", "Rust", "Raspberry Pi", "E-Ink", "Embedded", "Hardware"],
     videoUrl: "/videos/crabink.mp4",
     videoPoster: "/images/crabink_poster.png",
