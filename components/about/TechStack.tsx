@@ -6,32 +6,41 @@ import {
   Brain,
   Smartphone,
   Box,
-  Zap
+  Zap,
+  Bot,
+  Workflow,
+  Wrench
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const webTechs = [
-  { name: "Next.js", icon: Globe },
   { name: "React", icon: Code2 },
+  { name: "Next.js", icon: Globe },
   { name: "TypeScript", icon: Code2 },
   { name: "Vite", icon: Zap },
   { name: "Tailwind CSS", icon: Layout },
-  { name: "Framer Motion", icon: Layout },
   { name: "Three.js", icon: Box },
-  { name: "PHP", icon: Globe },
+  { name: "Framer Motion", icon: Layout },
   { name: "Responsive Design", icon: Smartphone },
 ];
 
 const softwareTechs = [
   { name: "C / C++", icon: Cpu },
   { name: "Rust", icon: Cpu },
-  { name: "Python / AI", icon: Brain },
+  { name: "SQL", icon: Database },
+  { name: "Qt5", icon: Wrench },
   { name: "Docker", icon: Server },
-  { name: "CI/CD / Actions", icon: GitBranch },
-  { name: "Turso / SQL", icon: Database },
   { name: "Nginx", icon: Globe },
+  { name: "CI/CD / Actions", icon: GitBranch },
   { name: "Linux / Bash", icon: Terminal },
   { name: "Valgrind / GDB", icon: Bug },
+];
+
+const aiTechs = [
+  { name: "LangChain", icon: Brain },
+  { name: "n8n", icon: Workflow },
+  { name: "Agents IA", icon: Bot },
+  { name: "LLMs / RAG", icon: Brain },
 ];
 
 export function TechStack() {
@@ -52,14 +61,26 @@ export function TechStack() {
 
       {/* BANDE 2 : SOFTWARE (Vers la Droite) */}
       <div className="space-y-2">
-         <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1 text-right mr-1">Software & Backend</h3>
+         <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1 text-right mr-1">Systems & Infrastructure</h3>
          <div className="relative flex w-full overflow-hidden mask-gradient">
             {/* 👇 Utilisation de animate-marquee-reverse */}
             <div className="flex animate-marquee-reverse gap-4 min-w-full">
               {[...softwareTechs, ...softwareTechs, ...softwareTechs].map((tech, i) => (
                 <Item key={`soft-${i}`} name={tech.name} icon={tech.icon} />
               ))}
-            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* BANDE 3 : AI (Vers la Gauche) */}
+      <div className="space-y-2">
+        <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">IA & Automatisation</h3>
+        <div className="relative flex w-full overflow-hidden mask-gradient">
+          <div className="flex animate-marquee gap-4 min-w-full">
+            {[...aiTechs, ...aiTechs, ...aiTechs].map((tech, i) => (
+              <Item key={`ai-${i}`} name={tech.name} icon={tech.icon} />
+            ))}
+          </div>
         </div>
       </div>
 

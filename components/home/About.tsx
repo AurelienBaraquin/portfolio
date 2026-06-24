@@ -79,21 +79,21 @@ export function About() {
 
                 <div>
                     <h3 className="text-xl font-bold">Aurélien Baraquin</h3>
-                    <p className="text-primary font-medium">Créateur Digital & Dev</p>
+                    <p className="text-primary font-medium">Ingénieur Logiciel & Dev Fullstack</p>
                 </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-                <strong>Ingénieur Logiciel</strong> spécialisé dans la convergence entre la 
-                <span className="text-foreground font-medium"> performance système</span> et l'agilité du 
-                <span className="text-foreground font-medium"> web moderne</span>. Basé à Dublin, j'accompagne les entreprises dans la création de solutions techniques robustes et scalables.
+                <strong>Étudiant Ingénieur Logiciel</strong> en 5e année à <strong>Epitech</strong>, spécialisé dans la convergence entre les 
+                <span className="text-foreground font-medium"> systèmes bas niveau</span> et l'agilité du 
+                <span className="text-foreground font-medium"> web moderne</span>. Basé à Marseille, je conçois des architectures logicielles performantes et des infrastructures pilotées par agents IA.
                 <br/><br/>
-                Maîtrisant les langages de précision comme le <strong>C++, et Rust</strong>, j'ai développé une expertise rare en 
-                <span className="text-foreground"> architecture logicielle</span> et en <strong>optimisation de ressources</strong> (gestion mémoire, multithreading) à travers la conception d'émulateurs et de moteurs de jeux.
+                Maîtrisant les langages de précision comme le <strong>C/C++ et Rust</strong>, j'ai développé une expertise en 
+                <span className="text-foreground"> architecture logicielle</span> et en <strong>optimisation de ressources</strong> (gestion mémoire, multithreading) à travers la conception d'émulateurs et de moteurs de rendu.
                 <br/><br/>
-                Cette rigueur "bas niveau", je l'applique au <strong>Web Fullstack</strong> pour garantir des performances hors normes. Expert de l'écosystème 
-                <span className="text-primary font-semibold"> Next.js 15 et TypeScript</span>, je conçois des applications fluides et sécurisées, intégrant intelligemment les capacités de l'<strong>IA générative</strong> (LLMs, RAG) pour répondre aux besoins métiers actuels.
+                Cette rigueur &quot bas niveau &quot, je l'applique au <strong>Web Fullstack</strong> pour garantir des performances hors normes. Expert de l'écosystème 
+                <span className="text-primary font-semibold"> Next.js et TypeScript</span>, je conçois des applications fluides et sécurisées, avec une expertise en <strong>IA et automatisation</strong> (LangChain, n8n, orchestration d'agents autonomes).
                 <br/><br/>
-                Totalement autonome sur la chaîne <strong>DevOps</strong> (Docker, CI/CD, Nginx), je prends en charge l'hébergement et le déploiement de vos infrastructures sur serveurs dédiés. Plus qu'un développeur, j'apporte une 
+                Totalement autonome sur la chaîne <strong>DevOps</strong> (Docker, CI/CD, Nginx), je prends en charge l'hébergement et le déploiement d'infrastructures en production. Plus qu'un développeur, j'apporte une 
                 <span className="text-foreground font-medium"> vision d'ingénieur</span> capable de sécuriser vos choix techniques et de livrer des produits finis, prêts à passer à l'échelle.
             </p>
           </BentoCard>

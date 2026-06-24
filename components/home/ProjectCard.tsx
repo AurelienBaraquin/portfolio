@@ -116,27 +116,47 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       </motion.div>
 
       {/* --- BLOC VIDÉO (Retour à la version simple + Parallaxe) --- */}
-      <div className="flex-1 w-full">
-        <motion.div 
-            style={{ y: yProgress, opacity: opacityProgress }}
-            className="relative rounded-xl border border-white/10 bg-white/5 p-2 shadow-2xl overflow-hidden group"
-        >
-            {/* Glow effect subtil */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-blue-600/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-700"></div>
-            
-            <div className="relative rounded-lg overflow-hidden aspect-video bg-muted/50">
-               <video
-                 src={project.videoUrl}
-                 poster={project.videoPoster}
-                 autoPlay
-                 loop
-                 muted
-                 playsInline
-                 className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-               />
-            </div>
-        </motion.div>
-      </div>
+      {project.videoUrl ? (
+        <div className="flex-1 w-full">
+          <motion.div 
+              style={{ y: yProgress, opacity: opacityProgress }}
+              className="relative rounded-xl border border-white/10 bg-white/5 p-2 shadow-2xl overflow-hidden group"
+          >
+              {/* Glow effect subtil */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-blue-600/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-700"></div>
+              
+              <div className="relative rounded-lg overflow-hidden aspect-video bg-muted/50">
+                 <video
+                   src={project.videoUrl}
+                   poster={project.videoPoster}
+                   autoPlay
+                   loop
+                   muted
+                   playsInline
+                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                 />
+              </div>
+          </motion.div>
+        </div>
+      ) : (
+        <div className="flex-1 w-full">
+          <motion.div 
+              style={{ y: yProgress, opacity: opacityProgress }}
+              className="relative rounded-xl border border-white/10 bg-white/5 p-2 shadow-2xl overflow-hidden group"
+          >
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-blue-600/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-700"></div>
+              
+              <div className="relative rounded-lg overflow-hidden aspect-video bg-muted/30 flex items-center justify-center">
+                 <div className="text-center space-y-3 p-8">
+                    <div className="inline-flex p-4 rounded-2xl bg-primary/10">
+                       <Github size={32} className="text-primary" />
+                    </div>
+                    <p className="text-sm text-muted-foreground">Projet open-source — voir le code sur GitHub</p>
+                 </div>
+              </div>
+          </motion.div>
+        </div>
+      )}
 
     </div>
   );

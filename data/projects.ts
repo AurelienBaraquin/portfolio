@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[]; // ex: ["Next.js", "Framer"]
-  videoUrl: string; // Chemin vers la vidéo dans public/
+  videoUrl?: string; // Chemin vers la vidéo dans public/
   videoPoster?: string; // Chemin vers l'image poster de la vidéo
   link?: string; // Lien vers le site live
   github?: string; // Lien vers le code
@@ -32,15 +32,22 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Emulateur de NES en Rust",
-    description: "Ingénierie de Haute Performance : Développement d'un système complexe en Rust. Maîtrise critique de la gestion mémoire, des cycles CPU et de l'optimisation bas-niveau.",
+    title: "Raytracer / Visualiseur 3D",
+    description: "Moteur de rendu par lancer de rayons en C++ pur, sans moteur graphique tiers. Implémentation complète du pipeline graphique : intersections, éclairage, ombres, réflexions et textures.",
+    tags: ["C++", "Raytracing", "3D", "Mathématiques", "Performance", "PBR"],
+    github: "https://github.com/AurelienBaraquin",
+  },
+  {
+    id: 4,
+    title: "Emulateur NES en Rust",
+    description: "Ingénierie de Haute Performance : Développement d'un système complexe en Rust. Maîtrise critique de la gestion mémoire, des cycles CPU et de l'optimisation bas-niveau. En cours de portage vers WebAssembly.",
     tags: ["Rust", "Emulation", "NES", "SDL2", "WebAssembly", "CPU", "PPU"],
     videoUrl: "/videos/rust_nes.mp4",
     videoPoster: "/images/rust_nes_poster.png",
     github: "https://github.com/AurelienBaraquin/nes_rust_emulator",
   },
   {
-    id: 4,
+    id: 5,
     title: "NESCARGOT - Moteur de jeu NES en C",
     description: "Un moteur de jeu développé en C et en Assembleur pour faciliter la création de jeux sur la console NES, avec des outils pour la gestion des sprites, de la musique et des entrées utilisateur.",
     tags: ["C", "ASM", "Game Engine", "NES", "Sprites", "Audio", "Input"],

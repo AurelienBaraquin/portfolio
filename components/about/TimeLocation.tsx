@@ -6,14 +6,14 @@ export function TimeLocation() {
   const [time, setTime] = useState("");
 
   useEffect(() => {
-    // Fonction qui met à jour l'heure de Dublin
+    // Fonction qui met à jour l'heure de Marseille (Paris)
     const updateTime = () => {
-      const dublinTime = new Date().toLocaleTimeString("en-IE", {
-        timeZone: "Europe/Dublin",
+      const parisTime = new Date().toLocaleTimeString("fr-FR", {
+        timeZone: "Europe/Paris",
         hour: "2-digit",
         minute: "2-digit",
       });
-      setTime(dublinTime);
+      setTime(parisTime);
     };
 
     updateTime();
@@ -37,7 +37,7 @@ export function TimeLocation() {
             {time}
         </h4>
         <p className="text-muted-foreground text-sm font-medium">
-            Dublin, Ireland 🇮🇪
+        Marseille, France 🇫🇷
         </p>
       </div>
     </div>
