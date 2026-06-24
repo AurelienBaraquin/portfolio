@@ -37,9 +37,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground"
         >
-          Solutions Web Haute Performance <br />
+          Systèmes Bas Niveau. <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-            & Architectures Logicielles Scalables.
+            Web Moderne. IA Autonome.
           </span>
         </motion.h1>
 
@@ -50,7 +50,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
-          Développeur Fullstack polyvalent, spécialisé dans la conception d'architectures logicielles performantes et d'interfaces web réactives.
+          Étudiant Ingénieur Logiciel à Epitech — du C++ et Rust au fullstack web, en passant par l&apos;orchestration d&apos;agents IA en production.
         </motion.p>
 
         {/* Boutons d'action */}
