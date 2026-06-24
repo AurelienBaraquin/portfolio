@@ -2,6 +2,7 @@
 
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
+import { InfrastructureShowcase } from "./InfrastructureShowcase";
 import { motion } from "framer-motion";
 
 export function Projects() {
@@ -23,6 +24,18 @@ export function Projects() {
           Une sélection de mes projets récents, alliant technique complexe et design soigné.
         </p>
       </motion.div>
+
+      {/* Projet vedette — Infrastructure */}
+      <InfrastructureShowcase />
+
+      {/* Séparateur */}
+      <div className="flex items-center gap-4 my-16 md:my-24">
+        <div className="flex-1 h-px bg-border" />
+        <span className="text-xs font-medium text-muted-foreground uppercase tracking-widest">
+          Autres projets
+        </span>
+        <div className="flex-1 h-px bg-border" />
+      </div>
 
       {/* Liste des cartes */}
       <div className="flex flex-col">
