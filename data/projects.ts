@@ -32,13 +32,6 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Raytracer / Visualiseur 3D",
-    description: "Moteur de rendu par lancer de rayons en C++ pur, sans moteur graphique tiers. Implémentation complète du pipeline graphique : intersections, éclairage, ombres, réflexions et textures.",
-    tags: ["C++", "Raytracing", "3D", "Mathématiques", "Performance", "PBR"],
-    github: "https://github.com/AurelienBaraquin",
-  },
-  {
-    id: 4,
     title: "Emulateur NES en Rust",
     description: "Ingénierie de Haute Performance : Développement d'un système complexe en Rust. Maîtrise critique de la gestion mémoire, des cycles CPU et de l'optimisation bas-niveau. En cours de portage vers WebAssembly.",
     tags: ["Rust", "Emulation", "NES", "SDL2", "WebAssembly", "CPU", "PPU"],
